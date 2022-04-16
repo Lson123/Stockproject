@@ -1,0 +1,37 @@
+{% extends 'main/basic.html' %}
+{% load static %}
+{% block title %}
+StockPicker
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>Stock Tracker</h1>
+    <p>Select your stocks to track.</p>
+    <form action="/stocktracker">
+        <label for="stockpicker">Select Stocks:</label>
+        <select class="form-select form-select-lg mb-3" multiple aria-label="multiple select example"
+            name="stockpicker">
+            {% for i in stockpicker %}
+            <option value="{{i}}">{{i}}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <div class="d-grid gap-2">
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<div class="container">
+    <p>Instructions :
+       <br> 1.Select your desired stocks to track using click/tap. <br> 2.You can select multiple stocks using Ctrl + click. <br>3. Use Stock predictor to predict the data of your required stock.
+    </p>
+</div>
+{% endblock %}
+{% block css %}
+<style>
+</style>
+{% endblock %}
+{% block js %}
+<script>
+</script>
+{% endblock %}
