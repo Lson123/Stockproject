@@ -23,19 +23,37 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Stonks</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Stonks Tracker</a>
             <button class="navbar-toggler ms-auto hidden-sm-up float-xs-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="http://localhost:8501/" target="_blank">Stonk predict</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home<span class="sr-only"> </span></a>
                     </li>
                 </ul>
-                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'stockpicker' %}">Tracker<span class="sr-only"> </span></a>
+                    </li>
+                </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost:8501/" target="_blank">Predictor<span class="sr-only"> </span></a>
+                    </li>
+                </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About<span class="sr-only"> </span></a>
+                    </li>
+                </ul>    
             </div>
         </div>
         <div class="toggle-container container">

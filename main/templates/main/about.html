@@ -1,0 +1,33 @@
+{% extends 'main/basic.html' %}
+{% load static %}
+{% block title %}
+About
+{% endblock %}
+{% block body %}
+<div class="container">
+    <br>
+    <h4>This project is built with</h4>
+    <hr>
+    <ul>
+        <li><a href="https://www.python.org/">Python 3</a> - One of the most popular coding language.</li>
+        <li><a href="https://www.djangoproject.com/">Django 3</a> - a high-level Python Web framework that encourages rapid development and clean, pragmatic design.</li>
+        <li><a href="https://getbootstrap.com/">bootstrap 4</a> - the world’s most popular front-end component library. </li>
+        <li><a href="https://pypi.org/project/yahoo-fin/">yahoo-fin</a> and <a href="https://pypi.org/project/yfinance/">yfinance</a> - to get real time Stock market data from the well known Yahoo! Finance.</li>
+        <li><a href="https://pypi.org/project/celery/">Celery</a> - for automation of Stock updating task.</li>
+        <li><a href="https://pypi.org/project/django-celery-beat/">Celery-beat</a> - for Database-backed Periodic Tasks.</li>
+        <li><a href="https://pypi.org/project/channels/">Channels</a> - which brings async, event-driven capabilities to Django.</li>
+        <li><a href="https://github.com/tporadowski/redis/releases/tag/v5.0.14">Redis</a> - Redis is an in-memory database that persists on disk.</li>
+        <li><a href="https://streamlit.io/">Streamlit</a> - an open-source Python library that makes it easy to create and share custom web apps for machine learning and data science.</li>
+        <li><a href="https://facebook.github.io/prophet/">FB Prophet</a> - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.</li>
+    </ul>
+    <br>
+</div>
+{% endblock %}
+{% block css %}
+<style>
+</style>
+{% endblock %}
+{% block js %}
+<script>
+</script>
+{% endblock %}

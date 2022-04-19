@@ -61,3 +61,9 @@ async def stockTracker(request):
 
 def stock_predict(request):
  return render(request, 'http://localhost:8501/')
+
+def home(request):
+    return render(request, 'main/home.html') 
+
+def about(request):
+    return render(request, 'main/about.html')     
